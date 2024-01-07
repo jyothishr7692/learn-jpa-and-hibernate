@@ -1,0 +1,31 @@
+package com.jyo.learnjpaandhibernate.course;
+
+public class Course {
+	private long id;
+	private String name;
+	private String author;
+
+	public Course() {
+		super();
+	}
+
+	public Course(long id, String name, String author) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.author = author;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+}
