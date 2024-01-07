@@ -1,8 +1,17 @@
 package com.jyo.learnjpaandhibernate.course;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Course {
+
+	@Id
 	private long id;
+
 	private String name;
+
 	private String author;
 
 	public Course() {
@@ -44,7 +53,5 @@ public class Course {
 	public String toString() {
 		return "Course [id=" + id + ", name=" + name + ", author=" + author + "]";
 	}
-	
-	
 
 }
